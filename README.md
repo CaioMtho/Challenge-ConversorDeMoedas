@@ -19,7 +19,7 @@ O programa converte usando qualquer moeda com um [ISO 4217](https://pt.wikipedia
 isso acontece utilizando uma funcionalidade da própria API.
 > Verifique "isValidIsoCode" em "ExchangeRateConnect.java"
 
-Um simples arquivo txt simples é usado para a persistência de dados, cada vez que uma operação é executada, o programa faz uma entrada no arquivo. Para ler, o programa garante
+Um simples arquivo txt é usado para a persistência de dados, cada vez que uma operação é executada, o programa faz uma entrada no arquivo. Para ler, o programa garante
 que o programa ainda está no formato desejado.
 > Verifique a classe "Record".
 >> É possível modificar o arquivo txt para injetar entradas manualmente, tal qual criar backups. Mas caso o arquivo não esteja no formato correto, será formatado.
