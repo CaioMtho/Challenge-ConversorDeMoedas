@@ -22,4 +22,7 @@ que o programa ainda está no formato desejado.
 > Verifique a classe "Record".
 >> É possível modificar o arquivo txt para injetar entradas manualmente, tal qual criar backups. Mas caso o arquivo não esteja no formato correto, será formatado.
 
+## 🔼 Possíveis melhorias
+- Implementação de um GUI para melhor experiência do usuário
+
 
