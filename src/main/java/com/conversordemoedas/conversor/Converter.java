@@ -21,11 +21,10 @@ public class Converter {
                 double rate = exchangeRates.getDouble(targetCurrency);
                 double finalValue = rate * valor;
                 System.out.println(currency + " = " + valor + "\t\t" + targetCurrency + " = " + finalValue);
-                // Registra a conversão bem sucedida em record.db
                 record.registerLog(currency + " > " + targetCurrency, valor, finalValue );
         } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println("Erro ao converter a moeda.");
+            System.out.println(e.getMessage());
+            System.out.println("ERRO: Nao foi possivel converter a moeda.");
         }
     }
 

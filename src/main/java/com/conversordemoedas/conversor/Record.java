@@ -28,6 +28,7 @@ public class Record {
                 Files.createFile(path);
             }
         } catch (IOException e) {
+            System.out.println(e.getMessage());
             System.out.println("ERRO: Nao foi possivel  criar arquivo de persistencia: " + e.getMessage());
         }
     }
@@ -100,7 +101,7 @@ public class Record {
                 currentId++;
             }
         } catch (IOException e) {
-            System.out.println("Erro ao ler registros: " + e.getMessage());
+            System.out.println("ERRO: Nao foi possivel ler registros: " + e.getMessage());
         }
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME))) {
             for (String line : lines) {

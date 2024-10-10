@@ -29,7 +29,7 @@ public class ExchangeRateConnect {
                 return jsonResponse.getJSONObject("conversion_rates");
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
         return null;
     }
@@ -49,7 +49,7 @@ public class ExchangeRateConnect {
                         .anyMatch(item -> ((List<?>) item).get(0).equals(code));
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
         return false;
     }
